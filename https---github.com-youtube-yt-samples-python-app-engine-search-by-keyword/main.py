@@ -26,7 +26,7 @@ REGISTRATION_INSTRUCTIONS = """
 # Google APIs Console http://code.google.com/apis/console#access
 # Please ensure that you have enabled the YouTube Data API and Freebase API
 # for your project.
-API_KEY = "AIzaSyBSoWzvpkexNBv_1iev4gKh3V-gGBTcqG4"
+API_KEY = "1/GUeNPXG-t_ARgtousmEhP2q_0Je5gqRRLj_RcXy9vD0"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 QUERY_TERM = "dog"
