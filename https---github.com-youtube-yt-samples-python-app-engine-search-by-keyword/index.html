@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <p>Videos: </p>
+    {% for video in search_results["videos"] %}
+    	<div>{{ video }}</div>
+    {% endfor %}
+    
+    <p>Channels: </p>
+    {% for channel in search_results["channels"] %}
+    	<div>{{ channel }}</div>
+    {% endfor %}
+    
+    <p>Playlists: </p>
+    {% for playlist in search_results["playlists"] %}
+    	<div>{{ playlist }}</div>
+    {% endfor %}    
+  </body>
+</html>
