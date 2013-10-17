@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>PlayON!</title>
+<h1>PlayON!</h1>
+<h4>A quick and easy personal playlister</h4>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src='js/form.js'></script>
+<script type="text/javascript" src='js/search.js'></script>
+<script type="text/javascript" src='js/plugins/autosize-master/jquery.autosize.js'></script>
+<script type="text/javascript" src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="css/form.css">
+
+</head>
+
+<body>
+	<textarea class="songInput">Insert your songs here</textarea>
+	<button id="addSongs" disabled=true>Waiting for Youtube API to load</button>
+	<pre id="playlistStatus"></pre>
+	<ul id="playlist">
+	</ul>
+	<pre id="response"></pre>
+</body>
+</html>

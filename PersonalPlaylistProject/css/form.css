@@ -1,0 +1,28 @@
+textarea {
+	border:2.0px solid #ccc;
+	padding: 10.0px;
+	vertical-align: top;
+	width: 25.0%;
+}
+
+.songInput {
+	-webkit-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+	transition: height 0.2s;
+}
+
+#playlist{ 
+	list-style-type: none; 
+	margin: 0.0; 
+	padding: 0.0; 
+	width: 40.0%;
+}
+
+#playlist li { 
+	margin: 0 3px 3px 3px; 
+	padding: 0.4em; 
+	padding-left: 1.5em; 
+	font-size: 1.4em; 
+	height: 18px;
+	
+}

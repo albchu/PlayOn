@@ -23,6 +23,5 @@ function TodoCtrl($scope) {
     		}
     	}
     	$scope.formTodoText = '';
-
     };
 }
