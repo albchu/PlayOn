@@ -26,3 +26,7 @@ textarea {
 	height: 18px;
 	
 }
+
+#player{
+	display: none;
+}

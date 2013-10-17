@@ -4,21 +4,15 @@
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
-    var videoID = getFirstID(response);
+    var firstItem = response.items[0];
+    var videoID = firstItem.id.videoId;
+    var title = firstItem.snippet.title;
     
-    //Get last song and append the video id
-    $('#playlist li:last-child').attr("videoID", videoID);
+	addSongToPlaylist(videoID, title);
     
-    document.getElementById('response').innerHTML = videoID;
 //    document.getElementById('response').innerHTML = responseString;
 }
 
-//Helper function to display first id returned
-function getFirstID(response) {
-	//Get only first result back
-	firstID = response.items[0].id.videoId;
-	return firstID;
-}
 // Called automatically when JavaScript client library is loaded.
 function onClientLoad() {
     gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
@@ -34,7 +28,7 @@ function onYouTubeApiLoad() {
 //    ytsearch();
 }
 
-function ytsearch(query) {
+function ytsearch(query, songNumber) {
 	if(query == undefined){
 		query = 'big booty bitches';
 	}

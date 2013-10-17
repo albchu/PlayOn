@@ -9,6 +9,7 @@
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript" src='js/form.js'></script>
 <script type="text/javascript" src='js/search.js'></script>
+<script type="text/javascript" src='js/player.js'></script>
 <script type="text/javascript" src='js/plugins/autosize-master/jquery.autosize.js'></script>
 <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
 <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
@@ -18,11 +19,14 @@
 </head>
 
 <body>
-	<textarea class="songInput">Insert your songs here</textarea>
+<p id="demo"></p>
+	<pre id="player">Youtube Player Ready!</pre>
+	<textarea class="songInput">passenger
+	intro</textarea>
 	<button id="addSongs" disabled=true>Waiting for Youtube API to load</button>
 	<pre id="playlistStatus"></pre>
 	<ul id="playlist">
 	</ul>
-	<pre id="response"></pre>
+	<pre id="lastVidID"></pre>
 </body>
 </html>
